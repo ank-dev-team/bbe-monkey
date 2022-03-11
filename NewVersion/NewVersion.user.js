@@ -10,8 +10,8 @@
 // @require      https://code.jquery.com/jquery-3.5.1.slim.min.js
 // @run-at       document-end
 // @grant        none
-// @downloadURL https://github.com/ank-dev-team/bbe-monkey/raw/main/bbe-monkey/NewVersion.user.js
-// @updateURL   https://github.com/ank-dev-team/bbe-monkey/raw/main/bbe-monkey/NewVersion.meta.js
+// @downloadURL https://github.com/ank-dev-team/bbe-monkey/raw/main/NewVersion/NewVersion.user.js
+// @updateURL   https://github.com/ank-dev-team/bbe-monkey/raw/main/NewVersion/NewVersion.meta.js
 // ==/UserScript==
 
 /* global jQuery */
