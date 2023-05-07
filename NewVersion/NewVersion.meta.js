@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NewVersion
 // @namespace    BBE CORP
-// @version      0.1
+// @version      0.2
 // @description  Marque les nouvelles versions des PDF téléchargés
 // @author       Seishin
 // @match        http://www.black-book-editions.fr/mon_compte.php?a=pdf*
