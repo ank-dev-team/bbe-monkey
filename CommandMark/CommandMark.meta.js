@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        command_mark
 // @namespace    BBE CORP
-// @version      1.0
+// @version      1.1
 // @description  Marque les commandes reçues
 // @author       Seishin
 // @match       https://black-book-editions.fr/mon_compte.php?a=commande*
