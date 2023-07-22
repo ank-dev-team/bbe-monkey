@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        command_mark
 // @namespace    BBE CORP
-// @version      1.0
+// @version      1.1
 // @description  Marque les commandes reçues
 // @author       Seishin
 // @match       https://black-book-editions.fr/mon_compte.php?a=commande*
@@ -15,9 +15,6 @@
 // @downloadURL https://github.com/ank-dev-team/bbe-monkey/raw/main/CommandMark/CommandMark.user.js
 // @updateURL   https://github.com/ank-dev-team/bbe-monkey/raw/main/CommandMark/CommandMark.meta.js
 // ==/UserScript==
-
-
-
 
 window.BASEURL = 'https://api.rpgservices.eu/bbe/api.php?type=command&action=';
 window.SETURL = window.BASEURL + 'set&ref=';
@@ -88,7 +85,7 @@ window.GETURL = window.BASEURL + 'get&ref=';
   head.append(mycss);
   head.append(myscript);
 
-  let header = $('<th></th>');
+  let header = $('<th>Livré ?</th>');
   header.attr('class', 'aC');
   $('#main_content table thead tr:first').append(header);
 
@@ -96,6 +93,7 @@ window.GETURL = window.BASEURL + 'get&ref=';
     .each(function(){
       let commande = $($(this)[0].firstChild).text();
       let delivery = $('<td></td>');
+      delivery.attr('class', 'aC');
       let check = $('<input></input>');
       check.attr('type', 'checkbox');
       check.attr('value', commande);
@@ -125,4 +123,3 @@ window.GETURL = window.BASEURL + 'get&ref=';
   let toggleCheck = $('<input type="checkbox" id="toggleCheck" onchange="toggleDeliveredCommands()" checked> <label for="toggleCheck"> Seulement les commandes non livrées</label>');
   $('#main_content h2.subtitle').append(' ').append(toggleCheck);
 })(jQuery.noConflict());
-
